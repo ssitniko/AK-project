@@ -48,3 +48,21 @@ a:hover {
   color: #cf0000;
   border-bottom-color: rgba(208, 64, 0, 0.2);
 }
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.content {
+  margin-top: 50px;
+}
+
+.product {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #c0c0c0;
+  overflow: hidden;
+  padding: 25px 15px;
+  position: relative;
+  text-align: center;
+}
