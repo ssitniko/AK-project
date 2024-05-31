@@ -66,3 +66,11 @@ img {
   position: relative;
   text-align: center;
 }
+
+.product:hover {
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+
+.product-img {
+  height: 200px;
+}
