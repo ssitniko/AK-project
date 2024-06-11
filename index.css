@@ -75,14 +75,14 @@ a:hover {
 
 .product-img {
   height: 200px;
-  margin-bottom: 30%;
+  margin-bottom: 50%;
+  margin-right: 50%;
 }
 
 .product-title a {
   color: #000;
   font-weight: 500;
   text-transform: uppercase;
-  margin-top: 15px;
 }
 
 .product-desc {
