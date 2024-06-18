@@ -77,8 +77,6 @@ a:hover {
   height: 200px;
   margin-bottom: 50%;
   margin-right: 50%;
-
-  
 }
 
 .product-title a {
@@ -109,4 +107,10 @@ a:hover {
   text-decoration: none;
   background-color: #353a3e;
   color: #fff;
+}
+
+.input {
+  height: 25px;
+  width: 200px;
+  margin-left: 30px;
 }
