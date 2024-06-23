@@ -115,3 +115,9 @@ a:hover {
   margin-left: 30px;
 }
 
+.payment-delivery-h1 h1 {
+  text-align: center; 
+  margin-bottom: 2%; 
+  border-bottom: 2px solid; 
+  padding-bottom: 5%;
+}
