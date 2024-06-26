@@ -121,3 +121,47 @@ a:hover {
   border-bottom: 2px solid; 
   padding-bottom: 5%;
 }
+
+.payment-delivery-h2 {
+  padding-left: 5%; 
+  border-right: 2px solid silver;
+  height: 100%;
+}
+
+.payment-delivery-h4 {
+  padding-left: 5%; 
+  border-right: 2px solid silver; 
+  height: 100%;
+  font-weight: 400; 
+  padding-bottom: 3%;
+}
+
+.payment-place {
+  font-weight: 700; 
+  border-bottom: 1px solid silver;
+}
+
+.payment-method {
+  padding-left: 0.5%; 
+  border-bottom: 1px solid silver; 
+  padding-bottom: 3%;
+}
+
+.delivery-place {
+  font-weight: 700; 
+  padding-left: 3%;
+}
+
+.delivery-address {
+  padding-left: 3%; 
+  padding-bottom: 3%;
+}
+
+.subheading-h4 {
+  font-weight: 400; 
+  padding-bottom: 3%;
+}
+
+.delivery-place-worktime {
+  padding-left: 0.5%;
+}
