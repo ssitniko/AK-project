@@ -164,4 +164,14 @@ a:hover {
 
 .delivery-place-worktime {
   padding-left: 0.5%;
+  
+}
+
+#nameOutput {
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+#nameOutput li {
+  padding: 5px 0;
 }
