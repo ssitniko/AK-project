@@ -1,36 +1,54 @@
 
 // добавить обработчик выведения имя отзывов
 const nameInput = document.getElementById('nameInput');
+const feedbackInput = document.getElementById('feedbackInput');
 const addButton = document.getElementById('addButton');
 const nameOutput = document.getElementById('nameOutput');
-const feedbackInput = document.getElementById('feedbackInput');
 
 function updateList() {
   nameOutput.innerHTML = '';
   const items =  JSON.parse(localStorage.getItem('items') || '[]');
+
   items.forEach(item => {
-    const listItem = document.createElement('li');
-    listItem.textContent = item;
-    nameOutput.appendChild(listItem);
+    if (item.name && item.feedback) {
+
+      const listItem = document.createElement('li');
+  
+      const nameElement = document.createElement('strong');
+      nameElement.textContent = item.name;
+  
+      const feedbackElement  = document.createElement('p');
+      feedbackElement.textContent = item.feedback;
+  
+      listItem.appendChild(nameElement);
+      listItem.appendChild(feedbackElement);
+  
+      nameOutput.appendChild(listItem);
+    }
   });
 }
 
 addButton.addEventListener('click', () => {
-  const value = nameInput.value;
-  const feedbackValue = feedbackInput.value;
+  const nameValue = nameInput.value.trim();
+  const feedbackValue = feedbackInput.value.trim();
 
 
-  if (value, feedbackValue) {
+  if (nameValue, feedbackValue) {
     const items =  JSON.parse(localStorage.getItem('items') || '[]');
-    items.push(value, feedbackValue);
+    items.push({ name: nameValue, feedback: feedbackValue });
+
     localStorage.setItem('items', JSON.stringify(items));
 
     nameInput.value = '';
-    feedbackInput.feedbackValue = '';
+    feedbackInput.value = '';
     
     updateList();
   }
 });
+
+updateList();
+
+
 
 // Код без сохранения данных между сессиями, возможно пригодится при использовании с базой данных
 
@@ -47,17 +65,6 @@ addButton.addEventListener('click', () => {
 });
  */
 
-
-// Добавить обработчик события наведения мыши
-const emailInput = document.getElementById('emailInput');
-
-emailInput.addEventListener('mouseover', () => {
-  emailInput.style.backgroundColor = 'lightgreen';
-});
-
-emailInput.addEventListener('mouseout', () => {
-  emailInput.style.backgroundColor = '#'
-});
 
 
 

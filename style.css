@@ -167,11 +167,15 @@ a:hover {
   
 }
 
-#nameOutput {
-  list-style-type: none;
-  margin: 10px 0;
+#nameOutput li {
+  margin-bottom: 15px;
 }
 
-#nameOutput li {
-  padding: 5px 0;
+#nameOutput strong {
+  display: block;
+  font-size: 1.2em;
+}
+
+#nameOutput p {
+  margin: 5px 0 0;
 }
